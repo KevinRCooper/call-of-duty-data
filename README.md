@@ -39,7 +39,7 @@ This repository contains a script that analyzes multiplayer Call of Duty match d
 ## Overview
 
 1. **Data Cleaning & Preprocessing**  
-   - Certain columns (e.g., XP, Score, Armor, etc.) are removed before analysis because they're deemed irrelevant or overshadow other metrics.  
+   - Certain columns (e.g., XP, Armor, etc.) are removed before analysis because they're deemed irrelevant or overshadow other metrics.  
    - A “lag” feature is created by shifting each row by one, so we associate the previous match’s stats with the current match’s `Skill`.
 
 2. **Random Forest Model (Excluding `"Skill (Previous Match)"`)**  
@@ -114,12 +114,6 @@ When the script runs, it produces:
 5. **Console Logs**
     - The script prints out the top 5 positive correlation features and the top 5 negative correlation features.
     - “Positive” could be things you want to do more of, while “negative” might be things to avoid (like suicides).
-
-## Example Insights (Hypothetical)
-- **Damage Taken (Previous Match)** might appear at the top of both the Random Forest importances and correlation analysis, indicating some interesting phenomenon: maybe riskier play leads to higher skill matches next time.
-- **Suicides (Previous Match)** could show a negative correlation, suggesting that more suicides in a previous match correlate with a lower skill match next time.
-    
-> **Note**: These insights are entirely subject to the dataset’s actual content and may or may not generalize.
 
 ## Contributing
 
