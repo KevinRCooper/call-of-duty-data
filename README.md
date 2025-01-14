@@ -4,14 +4,14 @@ This repository contains a script that analyzes multiplayer Call of Duty match d
 
 ## Inital Observations
 ### Random Forest Feature Importances
-![Random Forest Feature Importances](examples/random_forest.png)
+![Random Forest Feature Importances](examples/Random_Forest.png)
 - **Damage Taken (Previous Match)** is the most important feature for predicting next-match skill.
 - **Score (Previous Match)** and **Deaths (Previous Match)** are also significant.
 - **Kills (Previous Match)** and **Shots (Previous Match)** are less important but still contribute.
 - **Longest Streak (Previous Match)** and **Suicides (Previous Match)** are some of the least important.
 
 ### Stastical Correlations
-![Correlation Bar Chart](examples/stat_correlation.png)
+![Correlation Bar Chart](examples/Stat_Correlation.png)
 - **Damage Taken (Previous Match)** has the highest positive correlation with next-match skill.
 - **Deaths (Previous Match)** and **Score (Previous Match)** are also positively correlated.
 - **Kills (Previous Match)** have a suprisingly low correlation with next-match skill.
@@ -31,7 +31,7 @@ This repository contains a script that analyzes multiplayer Call of Duty match d
 | Executions (Previous Match)     | -0.007      |
 
 ### "What to Improve" Bar Chart
-![What to Improve Bar Chart](examples/what_to_improve.png)
+![What to Improve Bar Chart](examples/What_To_Improve.png)
 - **Damage Taken (Previous Match)** is the most positively correlated feature with next-match skill.
 - **Deaths (Previous Match)** and **Shots (Previous Match)** are also positively correlated.
 - **Kills (Previous Match)** has a very low positive correlation.
